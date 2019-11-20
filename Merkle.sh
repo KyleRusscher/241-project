@@ -11,7 +11,9 @@ do
     then
         sha1sum $var | cut -d" " -f 1 >> ./${fileName}.txt    
     fi
-done
-sha1sum ${fileName}.txt | cut -d" " -f 1 
+done 
+if [ -f ${fileName}.txt ]
+    then
+    sha1sum ${fileName}.txt | cut -d" " -f 1
 rm ${fileName}.txt
-
+fi
