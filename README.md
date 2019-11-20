@@ -2,7 +2,8 @@
 Bash script that computes the top hash for a list of files to ensure validity.
 Uses sha1 hashing techniqie
 
-To use:
+<h1>To use: </h1>
+
 sh Merkle.sh [List of file names to be hashed]
 
 Link to screen shots of output:
